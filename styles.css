@@ -549,6 +549,8 @@
 
 /* Sidebar styles */
 .sidebar {
+  list-style-type: none; /* Remove os pontos da lista */
+
   width: 100%; /* A largura ocupa toda a tela */
   position: fixed;
   z-index: 100;
@@ -566,6 +568,7 @@
   justify-content: center; /* Centraliza os itens verticalmente */
   align-items: center; /* Centraliza os itens horizontalmente */
   text-align: center; /* Garante que o texto dos links também fique centralizado */
+  border-radius: 30px;
 }
 
 /* Os links da sidebar */
