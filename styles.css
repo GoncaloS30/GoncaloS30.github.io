@@ -447,14 +447,19 @@
     border-radius: 20px; /* Adjust radius for smaller screens */
   }
 
+  nav ul li {
+    display: none;
+  }
+
   .hero {
     width: 95%; /* Ensure it fits within smaller screens */
-    height: 60vh; /* Reduce height for better viewport usage */
+    height: 80vh; /* Reduce height for better viewport usage */
+    margin-top: -10px;
   }
 
   .main__container {
     grid-template-columns: 1fr; /* Stack elements vertically */
-    margin: 0 20px;
+    margin: 10px 10px;
     height: auto; /* Let height adjust dynamically */
     padding: 10px;
   }
@@ -464,8 +469,9 @@
   }
 
   .main__content h1{
-    font-size: 1.2rem; /* Reduce font sizes for smaller screens */
-    margin-right: 40px;
+    font-size: 1.5rem; /* Reduce font sizes for smaller screens */
+    margin-right: 30px;
+    text-align: center;
   }
 
   .main__content h2{
@@ -560,7 +566,6 @@
   overflow-y: hidden; /* Evita rolagem no início */
   transition: max-height 1s ease; /* Transição mais suave */
   max-height: 0; /* Inicialmente, a sidebar começa com altura 0 */
-  padding-top: 20px; /* Espaço no topo para os links */
   border-radius: 10px;
 
   display: flex; /* Usando flexbox */
