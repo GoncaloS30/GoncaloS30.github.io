@@ -439,3 +439,115 @@
     background-color: #a98580;
   }
   
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .hero__nav {
+    padding: 10px 20px;
+    height: 12vh; /* Slightly increase navbar height for better touch accessibility */
+    border-radius: 20px; /* Adjust radius for smaller screens */
+  }
+
+  .hero {
+    width: 95%; /* Ensure it fits within smaller screens */
+    height: 60vh; /* Reduce height for better viewport usage */
+  }
+
+  .main__container {
+    grid-template-columns: 1fr; /* Stack elements vertically */
+    margin: 0 20px;
+    height: auto; /* Let height adjust dynamically */
+    padding: 10px;
+  }
+
+  .main__content {
+    text-align: center; /* Center content for readability */
+  }
+
+  .main__content h1{
+    font-size: 1.2rem; /* Reduce font sizes for smaller screens */
+    margin-right: 40px;
+  }
+
+  .main__content h2{
+    font-size: 1rem; /* Reduce font sizes for smaller screens */
+    margin-right: 40px;
+  }
+
+  .main__content p {
+    font-size: 1.2rem; /* Adjust paragraph text size */
+  }
+
+  .about {
+    padding: 20px; /* Reduce padding */
+    height: auto; /* Let height adjust based on content */
+  }
+
+  .about__container {
+    flex-direction: column; /* Stack image and content vertically */
+    align-items: center;
+  }
+
+  .about__image img {
+    width: 100%; /* Adjust image size to fit */
+  }
+
+  .about__content {
+    padding: 0; /* Remove side padding */
+    margin: 20px 0; /* Add spacing between content blocks */
+  }
+
+  .about h1{
+    font-size: 1.5rem; /* Adjust heading size */
+  }
+
+  .about__content p{
+    font-size: 1rem;
+    margin-left: 40px;
+  }
+
+  .questions__container {
+    flex-direction: column; /* Stack content vertically */
+    gap: 10px; /* Reduce gap for smaller screens */
+  }
+
+  .modal__content {
+    width: 90%; /* Adjust modal width */
+  }
+
+  /* Buttons */
+  button,
+  .main__btn.primary,
+  .main__btn.secondary,
+  .about__btn,
+  .questions__btn {
+    padding: 5px 20px; /* Adjust padding */
+    font-size: 1rem; /* Scale down font size */
+  }
+
+  .main__btn.primary {
+    padding: 5px 20px; /* Adjust padding */
+    font-size: 0.8rem; /* Scale down font size */
+    margin-right: 40px;
+  }
+
+  .about__btn{
+  margin-left: 75px;
+  }
+
+  nav ul li {
+    padding: 5px 10px; /* Adjust navbar links */
+  }
+
+  nav ul li a {
+    font-size: 1rem; /* Reduce link font size */
+  }
+
+  .questions__text p {
+    font-size: 1.8rem; /* Adjust question text size */
+  }
+
+  .questions__content p {
+    font-size: 1rem; /* Adjust question description size */
+  }
+}
+
