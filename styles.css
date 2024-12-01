@@ -534,13 +534,8 @@
   margin-left: 75px;
   }
 
-  nav ul li {
-    padding: 5px 10px; /* Adjust navbar links */
-  }
-
   nav ul li a {
-    font-size: 1rem; /* Reduce link font size */
-  }
+    display: none;  }
 
   .questions__text p {
     font-size: 1.8rem; /* Adjust question text size */
@@ -549,5 +544,95 @@
   .questions__content p {
     font-size: 1rem; /* Adjust question description size */
   }
+}
+
+
+/* Sidebar styles */
+.sidebar {
+  width: 100%; /* A largura ocupa toda a tela */
+  position: fixed;
+  z-index: 100;
+  top: 0; /* Alinha no topo da página */
+  left: 0;
+  background-color: white;
+  overflow-y: hidden; /* Evita rolagem no início */
+  transition: max-height 1s ease; /* Transição mais suave */
+  max-height: 0; /* Inicialmente, a sidebar começa com altura 0 */
+  padding-top: 20px; /* Espaço no topo para os links */
+  border-radius: 10px;
+
+  display: flex; /* Usando flexbox */
+  flex-direction: column; /* Alinha os itens na vertical */
+  justify-content: center; /* Centraliza os itens verticalmente */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  text-align: center; /* Garante que o texto dos links também fique centralizado */
+}
+
+/* Os links da sidebar */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+  margin-top: 15px;
+}
+.sidebar button {
+
+  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-left: 20px;
+
+}
+
+.sidebar .logo img{
+  margin-top: -100px;
+  margin-bottom: -50px;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Botão de abrir/fechar (no topo da página) */
+#sidebarToggle {
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+  display: block; /* O botão aparece inicialmente */
+  background: none;
+  border: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 101;
+
+}
+
+/* Quando a sidebar estiver aberta, ajusta o max-height para a altura do conteúdo */
+.sidebar.open {
+  max-height: 500px; /* Ajuste para a altura necessária para o conteúdo */
+  overflow-y: auto; /* Permite rolagem se o conteúdo for maior que o máximo */
+}
+
+/* Esconde o botão de abrir/fechar quando a sidebar estiver ativa */
+.sidebar.open ~ #sidebarToggle {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar {
+    display: none; /* Oculta a sidebar em telas grandes */
+  }
+
+  .sidebar .closebtn {
+    display: none; /* Oculta o botão de fechar a sidebar em telas grandes */
+  }
+
+  #sidebarToggle {
+    display: none; /* Oculta o botão de abrir a sidebar em telas grandes */
+  }
+
 }
 

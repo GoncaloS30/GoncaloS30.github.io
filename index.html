@@ -13,6 +13,17 @@
     <title>Igualdade Salarial</title>
 </head>
 <body>
+    <span id="sidebarToggle" onclick="toggleSidebar()">&#9776;</span>
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <li><a href="#heforshe">HeForShe</a></li>
+        <li><a href="#desafios">Desafios à Equidade</a></li>
+        <li><a href="#medidas">Medidas a Adotar</a></li>
+        <li><a href="#salario">Transparência Salarial </a></li>
+        <li><a href="#selecao">Processo de Seleção</a></li>
+    </div>
+
+
     <!-- Navbar fora da .hero -->
     <nav class="hero__nav">
         <ul class="nav-list">
@@ -334,5 +345,15 @@
     
       
 </body>
+<script>
+    function openNav() {
+        document.getElementById("sidebar").style.width = "250px";
+    }
+  
+    function closeNav() {
+        document.getElementById("sidebar").style.width = "0";
+    }
+</script>
+<script src="sidebar.js"></script>
 <script src="modal.js"></script>
 </html>
