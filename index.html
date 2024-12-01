@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="./assets/.ico">
+    <title>Igualdade Salarial</title>
+</head>
+<body>
+    <!-- Navbar fora da .hero -->
+    <nav class="hero__nav">
+        <ul class="nav-list">
+            <li><a href="#heforshe">HeForShe</a></li>
+            <li><a href="#desafios">Desafios à Equidade</a></li>
+            <li><a href="#medidas">Medidas a Adotar</a></li>
+            <li><a href="#salario">Transparência Salarial </a></li>
+            <li><a href="#selecao">Processo de Seleção</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section separada da navbar -->
+    <div class="hero">
+        <div class="hero__background"></div>
+        <!-- Conteúdo do hero aqui -->
+        <div class="main__container">
+            <div class="main__content">
+                <h1>As Mulheres no Mercado de Trabalho</h1>
+                <h2>Desigualdade salarial: Entrevista à HeForShe</h2>
+                <a href="#saber-mais" class="main__btn primary" role="button">Sabe mais!</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="about" id="saber-mais">
+        <h1>As Mulheres no Mercado de Trabalho</h1>
+        <div class="about__container">
+          <div class="about__image">
+            <img src="/img/img1.jpeg" alt="img" />
+          </div>
+          <div class="about__content">
+            <!-- Texto resumido -->
+            <p class="about__excerpt">
+              A história e evolução da participação das mulheres no mercado de trabalho representam um caminho marcado por lutas e conquistas, mas também por desafios persistentes. Apesar de ter ocorrido uma grande transformação no papel da mulher e na maneira como se insere no mercado laboral, persistem diversas desigualdades que necessitam ser enfrentadas. Uma delas é a desigualdade salarial entre géneros.
+            </p>
+            <!-- Botão "Ler Mais" -->
+            <button class="about__btn" onclick="openModal('aboutModal')">Ler Mais</button>
+        </div>
+        </div>
+      </div>
+      
+      <!-- Modal Popup -->
+      <!-- Modal da seção "Sobre" -->
+      <div class="modal" id="aboutModal">
+          <div class="modal__content">
+          <span class="modal__close" onclick="closeModal('aboutModal')">&times;</span>
+          <h2>As Mulheres no Mercado de Trabalho</h2>
+          <!-- Texto completo -->
+          <p>
+            A história e evolução da participação das mulheres no mercado de trabalho representam um caminho marcado por lutas e conquistas, mas também por desafios persistentes. Apesar de ter ocorrido uma grande transformação no papel da mulher e na maneira como se insere no mercado laboral, persistem diversas desigualdades que necessitam ser enfrentadas. Uma delas é a desigualdade salarial entre géneros.
+          </p>
+          <p>
+            Na União Europeia as mulheres continuam a auferir rendimentos inferiores aos dos homens, com uma disparidade média salarial de cerca de 12.7% (Eurostat, 2021). Isto significa que por cada euro recebido por um homem, uma mulher ganha apenas 87 cêntimos. A realidade portuguesa acompanha a europeia, e apesar de as disparidades salariais estarem a seguir uma tendência decrescente, as mulheres ganham ainda 12.5% a menos que os homens.
+          </p>
+          <p>
+            Segundo dados da Comissão para a Igualdade no Trabalho e no Emprego (CITE), a disparidade entre homens e mulheres, na esfera salarial, corresponde a 48 dias de trabalho pagos aos homens mas não às mulheres. As causas deste tipo de desigualdade de género são inúmeras e complexas, muitas vezes interligadas, envolvendo fatores estruturais, legais, sociais, culturais e económicos.
+          </p>
+          <p>
+            A necessidade de existir igualdade salarial nas empresas está estabelecida no Objetivo de Desenvolvimento Sustentável (ODS) nº5 da ONU: “Alcançar a igualdade de género e empoderar todas as mulheres e raparigas: acabar com todas as formas de discriminação contra todas as mulheres e meninas em todos os lugares.”
+          </p>
+        </div>
+      </div>  
+      
+      
+      <div class="questions">
+        <h1>Questões</h1>
+
+        <div class="questions__container" style="display: flex; gap: 20px;">
+            <!-- Sexta Pergunta -->
+            <div class="questions__column" style="flex: 1;">
+                <div class="questions__text">
+                    <p class="questions__question" id="heforshe">
+                        <strong>Primeiramente, fala-nos um pouco sobre ti (Camila Marques) e sobre a HeForShe Coimbra.</strong>
+                    </p>
+                </div>
+            </div>
+            <div class="questions__column" style="flex: 1;">
+                <div class="questions__content">
+                    <p class="questions__excerpt">
+                        <strong>[Camila Marques]</strong> Eu sou a Camila Marques e sou a atual coordenadora geral do HeForShe Coimbra. Estou no movimento há 3 anos, enquanto estudava Gestão aqui na FEUC, e agora estou no mestrado em Sociologia com o objetivo de estudar as questões de género. Posso dizer que grande parte da minha motivação para seguir... 
+                    </p>
+                    <button class="questions__btn" onclick="openModal('question6Modal')">Ler Mais</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal da Sexta Pergunta -->
+        <div class="modal" id="question6Modal">
+            <div class="modal__content">
+                <span class="modal__close" onclick="closeModal('question6Modal')">&times;</span>
+                <h2>HeForShe</h2>
+                <p>
+                    <strong>[Camila Marques]</strong> Eu sou a Camila Marques e sou a atual coordenadora geral do HeForShe Coimbra. Estou no movimento há 3 anos, enquanto estudava Gestão aqui na FEUC, e agora estou no mestrado em Sociologia com o objetivo de estudar as questões de género. Posso dizer que grande parte da minha motivação para seguir esta área cresceu no HeForShe, pude aprender imenso ao longo destes 3 anos e conhecer pessoas incríveis. Sobre a apresentação do movimento, o HeForShe é um movimento solidário internacional criado pela ONU Mulheres em 2014 e que tem o objetivo de alertar para os problemas de desigualdade de género e de potenciar a aliança dos homens cis ao movimento feminista. O HeForShe Coimbra surgiu em 2019 e é um núcleo regional responsável pela zona centro. Trabalhamos na luta incessante pela igualdade de géneros, sempre numa perspetiva interseccional, e procuramos consciencializar a população para a temática através dos nossos eventos e das nossas redes sociais. 
+
+                </p>
+            </div>
+        </div>
+
+        <div class="questions__container" style="display: flex; gap: 20px;">
+            <!-- Setima Pergunta -->
+            <div class="questions__column" style="flex: 1;">
+                <div class="questions__text">
+                    <p class="questions__question" id="heforshe">
+                        <strong>Como é que a associação visualiza a evolução do papel da mulher no mercado de trabalho nos próximos 10 anos, tendo em conta a atualidade? 
+                        </strong>
+                    </p>
+                </div>
+            </div>
+            <div class="questions__column" style="flex: 1;">
+                <div class="questions__content">
+                    <p class="questions__excerpt">
+                        <strong>[Camila Marques]</strong> É sempre uma coisa muito complicada estar a prever o futuro e também não consigo responder por todo o movimento e por toda a equipa e, portanto, vou dar apenas a minha opinião pessoal. Eu digo que é muito complicado prever o que vai acontecer nos próximos 10 anos porque, por um lado, temos visto um aumento da participação feminina nas áreas mais masculinizadas e no topo, devido a iniciativas governamentais e da sociedade civil mas, por outro lado, temos visto um retrocesso nos direitos das... 
+                    </p>
+                    <button class="questions__btn" onclick="openModal('question7Modal')">Ler Mais</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal da Setima Pergunta -->
+        <div class="modal" id="question7Modal">
+            <div class="modal__content">
+                <span class="modal__close" onclick="closeModal('question7Modal')">&times;</span>
+                <h2>HeForShe</h2>
+                <p>
+                    <strong>[Camila Marques]</strong> É sempre uma coisa muito complicada estar a prever o futuro e também não consigo responder por todo o movimento e por toda a equipa e, portanto, vou dar apenas a minha opinião pessoal. Eu digo que é muito complicado prever o que vai acontecer nos próximos 10 anos porque, por um lado, temos visto um aumento da participação feminina nas áreas mais masculinizadas e no topo, devido a iniciativas governamentais e da sociedade civil mas, por outro lado, temos visto um retrocesso nos direitos das mulheres um pouco por todo o mundo. E é por essa razão que acredito que esteja tudo muito incerto quanto ao que nos espera.  
+
+                </p>
+            </div>
+        </div>
+
+        <div class="questions__container" style="display: flex; gap: 20px;">
+            <!-- Oitava Pergunta -->
+            <div class="questions__column" style="flex: 1;">
+                <div class="questions__text">
+                    <p class="questions__question" id="heforshe">
+                        <strong>Em que medida é que a HeForShe Coimbra contribui para o combate destas desigualdades? 
+                        </strong>
+                    </p>
+                </div>
+            </div>
+            <div class="questions__column" style="flex: 1;">
+                <div class="questions__content">
+                    <p class="questions__excerpt">
+                        <strong>[Camila Marques]</strong> O nosso objetivo principal é promover a igualdade através da consciencialização da população, nomeadamente junto da comunidade estudantil de Coimbra que é o nosso público-alvo. Partimos de um mote que a educação é poder e promovemos espaços de partilha. A partir dos nossos eventos podemos chegar a várias áreas e incorporar nelas a perspetiva de género... 
+                    </p>
+                    <button class="questions__btn" onclick="openModal('question8Modal')">Ler Mais</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal da Oitava Pergunta -->
+        <div class="modal" id="question8Modal">
+            <div class="modal__content">
+                <span class="modal__close" onclick="closeModal('question8Modal')">&times;</span>
+                <h2>HeForShe</h2>
+                <p>
+                    <strong>[Camila Marques]</strong> O nosso objetivo principal é promover a igualdade através da consciencialização da população, nomeadamente junto da comunidade estudantil de Coimbra que é o nosso público-alvo. Partimos de um mote que a educação é poder e promovemos espaços de partilha. A partir dos nossos eventos podemos chegar a várias áreas e incorporar nelas a perspetiva de género. No ano letivo anterior, por exemplo, tivemos uma sessão de jornalismo inclusivo com dois profissionais da área e uma professora de Jornalismo da Universidade de Coimbra. Tivemos também rodas de conversa onde pudemos falar sobre a forma como as mulheres com deficiência ou mulheres LGBTQIA+ sofrem de outras formas de discriminação que se sobrepõem. Promovemos também um debate político antes das eleições legislativas para falar sobre as medidas de igualdade propostas por cada partido. Desta forma, pretendemos garantir que as pessoas sejam informadas e saibam a quem recorrer quando sofrem algum tipo de discriminação. Um outro aspeto fundamental é perceber que a desigualdade é estrutural, que está presente em todas as áreas da nossa sociedade e que não acontece só a nós ou por algo que fazemos individualmente.  
+
+                </p>
+            </div>
+        </div>
+
+    
+        <div class="questions__container" style="display: flex; gap: 20px;">
+            <!-- Primeira Pergunta -->
+            <div class="questions__column" style="flex: 1;">
+                <div class="questions__text">
+                    <p class="questions__question" id="desafios">
+                        <strong>Quais os desafios mais comuns que as mulheres enfrentam para alcançar equidade no mercado de trabalho? Qual aquele, na tua opinião, que teve menor evolução ao longo dos anos?</strong>
+                    </p>
+                </div>
+            </div>
+            <div class="questions__column" style="flex: 1;">
+                <div class="questions__content">
+                    <p class="questions__excerpt">
+                        <strong>[Camila Marques]</strong> Esta pergunta remeteu-me imediatamente para a questão da educação que é fundamental nas escolhas feitas pelas crianças e no desenvolvimento dos seus interesses e capacidades. A área de maior importância atualmente e que apresenta melhores perspectivas salariais é altamente masculinizada, estamos a falar da área das STEM, isto acontece por várias razões, a realidade é que as mulheres não são encorajadas a seguir esta área e as que chegam lá encontram um ambiente hostil, um “boy’s club”. Neste sentido, têm sido desenvolvidas campanhas, nomeadamente pela CIG (Comissão para a Igualdade de Género), para reverter esta... 
+                    </p>
+                    <button class="questions__btn" onclick="openModal('question1Modal')">Ler Mais</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal da Primeira Pergunta -->
+        <div class="modal" id="question1Modal">
+            <div class="modal__content">
+                <span class="modal__close" onclick="closeModal('question1Modal')">&times;</span>
+                <h2>Desafios à Equidade no Mundo de Trabalho</h2>
+                <p>
+                    <strong>[Camila Marques]</strong> Esta pergunta remeteu-me imediatamente para a questão da educação que é fundamental nas escolhas feitas pelas crianças e no desenvolvimento dos seus interesses e capacidades. A área de maior importância atualmente e que apresenta melhores perspectivas salariais é altamente masculinizada, estamos a falar da área das STEM, isto acontece por várias razões, a realidade é que as mulheres não são encorajadas a seguir esta área e as que chegam lá encontram um ambiente hostil, um “boy’s club”. Neste sentido, têm sido desenvolvidas campanhas, nomeadamente pela CIG (Comissão para a Igualdade de Género), para reverter esta tendência. Outro aspeto significativo é a maternidade. Numa unidade curricular do mestrado tive a oportunidade de entrevistar uma CEO portuguesa e esse foi o aspeto mais mencionado por ela. Referiu que quando trabalhava por conta de outrem sentiu uma descrença enorme na sua capacidade de trabalho a partir do momento em que foi mãe. Com isto não quero dizer que o obstáculo à igualdade  no mercado de trabalho é a maternidade, porque considero que o verdadeiro problema é a desigualdade que encontramos no trabalho não remunerado, no trabalho doméstico e no trabalho de cuidado. A divisão deste trabalho ainda permanece muito desigual sendo que as mulheres são quem mais horas despendem neste tipo de trabalho. Neste sentido acabam por haver menos mulheres a fazer horas extra no seu trabalho, o que é entendido como falta de empenho e de foco, impedindo  muitas vezes que as mulheres sejam promovidas e recebam melhores salários. Relativamente a isto é importante referir que as mulheres, pela mesma razão encontram-se na maioria em trabalhos de part time, pior remunerados e mais precários. Outra questão, mais difícil de identificar, é a descrença na capacidade da mulher de desempenhar cargos mais elevados numa empresa. Encontramos também vários casos de assédio no mercado laboral, o que constitui uma ameaça enorme à igualdade, não só por se tratar de uma forma de violência, mas também pelo local em que a mesma acontece, no ambiente de trabalho, isto impede as mulheres de  realizarem as suas funções plenamente e em segurança.
+
+                </p>
+            </div>
+        </div>
+    
+        <!-- Segunda Pergunta -->
+        <div class="questions__container" style="display: flex; gap: 20px;">
+            <div class="questions__column" style="flex: 1;">
+                <div class="questions__text">
+                    <p class="questions__question" id="medidas">
+                        <strong>Que medidas as empresas podem adotar para criar um ambiente de trabalho mais inclusivo e igualitário? Fala-nos de um exemplo de uma empresa que implementa estas medidas.</strong>
+                    </p>
+                </div>
+            </div>
+            <div class="questions__column" style="flex: 1;">
+                <div class="questions__content">
+                    <p class="questions__excerpt">
+                        <strong>[Camila Marques]</strong> Há várias formas de promover um ambiente de trabalho inclusivo dentro de uma empresa. Um aspeto crucial e que acaba por servir de base para tudo é a representatividade das mulheres em posição de liderança e de tomada de decisão. Esta medida contribui para que se tenham em consideração as experiências das mulheres e as suas necessidades dentro das empresas, promovendo ações efetivas. Além disso, é fundamental que a igualdade e a inclusão estejam na missão e nos valores da empresa. Relativamente ao processo de recrutamento, é importante fazer os anúncios de forma inclusiva, nomeadamente em termos de linguagem, ou seja, em vez de dizer “procuramos técnicos” podemos escrever “procuramos pessoa para ...
+                    </p>
+                    <button class="questions__btn" onclick="openModal('question2Modal')">Ler Mais</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal da Segunda Pergunta -->
+        <div class="modal" id="question2Modal">
+            <div class="modal__content">
+                <span class="modal__close" onclick="closeModal('question2Modal')">&times;</span>
+                <h2>Medidas Inclusivas no Trabalho</h2>
+                <p>
+                    <strong>[Camila Marques]</strong> Há várias formas de promover um ambiente de trabalho inclusivo dentro de uma empresa. Um aspeto crucial e que acaba por servir de base para tudo é a representatividade das mulheres em posição de liderança e de tomada de decisão. Esta medida contribui para que se tenham em consideração as experiências das mulheres e as suas necessidades dentro das empresas, promovendo ações efetivas. Além disso, é fundamental que a igualdade e a inclusão estejam na missão e nos valores da empresa. Relativamente ao processo de recrutamento, é importante fazer os anúncios de forma inclusiva, nomeadamente em termos de linguagem, ou seja, em vez de dizer “procuramos técnicos” podemos escrever “procuramos pessoa para desenvolver funções técnicas” ou então “procuramos técnico/a”. A questão da linguagem inclusiva deve ser, no entanto, transversal a toda a comunicação da empresa e não apenas neste momento inicial. É muito importante também que se tenha uma política de descriminação zero, promovendo um ambiente de trabalho seguro e livre de discriminação e assédio. Neste sentido, podem ser promovidas  ações de sensibilização e workshops internos sobre a temática. Além disso, há estratégias que se podem implementar para flexibilização e conciliação da vida pessoal e profissional, nomeadamente a flexibilização do horário de trabalho e a opção de teletrabalho quando possível. Passando para o exemplo, a empresa que vou apresentar é a PWC que adota medidas em prol da igualdade. A PWC tem uma estratégia de inclusão e diversidade onde se inclui a realização de avaliações de diversidade, um aumento da admissão de partners mulheres, assinaram também a carta portuguesa para a diversidade e inclusão e o lançamento de iniciativas como campanhas sobre micro agressões no local de trabalho e um programa intensivo de formações sobre os temas de inclusão e diversidade.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terceira Pergunta -->
+    <div class="questions__container" style="display: flex; gap: 20px;">
+        <div class="questions__column" style="flex: 1;">
+            <div class="questions__text">
+                <p class="questions__question" id="salario">
+                    <strong>Sendo que em 2022 a desigualdade era de 12.5% em Portugal e 12.7% na UE, que medidas acha que foram tomadas desde então e o que acha que resultou?</strong>
+                </p>
+            </div>
+        </div>
+        <div class="questions__column" style="flex: 1;">
+            <div class="questions__content">
+                <p class="questions__excerpt">
+                    <strong>[Camila Marques]</strong> Eu creio que não houve nenhuma alteração em particular, em 2022, pelo menos em matéria de legislação. Além disso, os últimos dados disponíveis são relativos a 2022, então não conseguimos tirar grandes conclusões sobre o que foi feito até ao momento. No entanto, temos tido, de uma forma geral, uma tendência para a redução da desigualdade salarial: em 2010, esta era cerca de 17.9%, ou seja, até 2022 tivemos uma redução de 5.4%. Também é importante referir que uma entidade que tem um papel fundamental na redução da desigualdade no trabalho em Portugal é a Comissão para...
+                </p>
+                <button class="questions__btn" onclick="openModal('question3Modal')">Ler Mais</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal da terceira Pergunta -->
+    <div class="modal" id="question3Modal">
+        <div class="modal__content">
+            <span class="modal__close" onclick="closeModal('question3Modal')">&times;</span>
+            <h2>Medidas Inclusivas no Trabalho</h2>
+            <p>
+                <strong>[Camila Marques]</strong> Eu creio que não houve nenhuma alteração em particular, em 2022, pelo menos em matéria de legislação. Além disso, os últimos dados disponíveis são relativos a 2022, então não conseguimos tirar grandes conclusões sobre o que foi feito até ao momento. No entanto, temos tido, de uma forma geral, uma tendência para a redução da desigualdade salarial: em 2010, esta era cerca de 17.9%, ou seja, até 2022 tivemos uma redução de 5.4%. Também é importante referir que uma entidade que tem um papel fundamental na redução da desigualdade no trabalho em Portugal é a Comissão para a Igualdade no Trabalho e no Emprego (CITE). A CITE é desde 1979 um mecanismo nacional que promove a igualdade e não discriminação entre homens e mulheres no trabalho, no emprego e na formação profissional. Esta comissão é responsável por colaborar na aplicação de disposições legais e convencionais nesta matéria e acompanhar juridicamente pessoas que foram vítimas de desigualdade no emprego. Para além disso, elabora estudos sobre a desigualdade de género no mercado de trabalho, desenvolve projetos e campanhas sobre esta matéria e promove formações em igualdade de género na área laboral junto de públicos estratégicos. Todas estas ações são cruciais na promoção da igualdade.
+
+            </p>
+        </div>
+    </div>
+
+    <!-- Quarta Pergunta -->
+    <div class="questions__container" style="display: flex; gap: 20px;">
+        <div class="questions__column" style="flex: 1;">
+            <div class="questions__text">
+                <p class="questions__question" id="salario">
+                    <strong>Em relação à desigualdade salarial, qual é a sua opinião sobre a eficácia de políticas como a transparência salarial? De que maneira é que estas podem contribuir para a redução da disparidade entre homens e mulheres no mesmo cargo?</strong>
+                </p>
+            </div>
+        </div>
+        <div class="questions__column" style="flex: 1;">
+            <div class="questions__content">
+                <p class="questions__excerpt">
+                    <strong>[Camila Marques]</strong> Eu acredito que as políticas públicas são fundamentais para a promoção efetiva da igualdade de género e diria que sem elas não tínhamos nada feito. Em Portugal, o Código do Trabalho já contempla o direito à igualdade salarial, no entanto, podemos observar que a desigualdade ainda persiste até porque parte da disparidade salarial não pode ser explicada por critérios objetivos. A diretiva europeia sobre a transparência salarial, que tem que ser transposta para a nossa legislação até 2026, irá reforçar este compromisso para com a igualdade impondo regras claras e objetivas. Esta legislação é crucial uma vez que a União Europeia identifica como um dos obstáculos à igualdade salarial a falta de transparência. De uma perspetiva mais prática, podemos ver que os homens têm uma maior facilidade em negociar o seu salário junto da entidade empregadora enquanto que as mulheres acabam por aceitar o valor que lhes é...
+                </p>
+                <button class="questions__btn" onclick="openModal('question4Modal')">Ler Mais</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal da Quarta Pergunta -->
+    <div class="modal" id="question4Modal">
+        <div class="modal__content">
+            <span class="modal__close" onclick="closeModal('question4Modal')">&times;</span>
+            <h2>Transparência Salarial</h2>
+            <p>
+                <strong>[Camila Marques]</strong> Eu acredito que as políticas públicas são fundamentais para a promoção efetiva da igualdade de género e diria que sem elas não tínhamos nada feito. Em Portugal, o Código do Trabalho já contempla o direito à igualdade salarial, no entanto, podemos observar que a desigualdade ainda persiste até porque parte da disparidade salarial não pode ser explicada por critérios objetivos. A diretiva europeia sobre a transparência salarial, que tem que ser transposta para a nossa legislação até 2026, irá reforçar este compromisso para com a igualdade impondo regras claras e objetivas. Esta legislação é crucial uma vez que a União Europeia identifica como um dos obstáculos à igualdade salarial a falta de transparência. De uma perspetiva mais prática, podemos ver que os homens têm uma maior facilidade em negociar o seu salário junto da entidade empregadora enquanto que as mulheres acabam por aceitar o valor que lhes é inicialmente proposto. Para além disso, temos uma cultura tabu em relação aos salários, o que facilita que numa mesma empresa uma mulher e um homem tenham salários diferentes para um trabalho igual, sem sequer se aperceberem. É aqui que se torna fundamental a lei da transparência que obriga as empresas a divulgar os valores dos seus salários e consequentemente as disparidades salariais. Mais especificamente, a lei obriga que esta divulgação seja feita no anúncio de emprego ou noutro momento antes da entrevista para combater efetivamente a desigualdade salarial. Mas, esta legislação vai mais além impondo ainda a utilização de linguagem neutra nos anúncios de emprego, obriga a justificar e corrigir as disparidades salariais de género, se estas forem superiores a 5%, e de apresentar critérios objetivos e neutros de remuneração e progressão na carreira. Tudo isto contribuiu para uma cultura empresarial mais justa e inclusiva. Dito isto, acredito que é crucial implementar medidas concretas de combate à discriminação, como é o caso da legislação da transparência salarial. 
+
+            </p>
+        </div>
+    </div>
+
+    <!-- Quinta Pergunta -->
+    <div class="questions__container" style="display: flex; gap: 20px;">
+        <div class="questions__column" style="flex: 1;">
+            <div class="questions__text">
+                <p class="questions__question" id="selecao">
+                    <strong>Consideras que o género constitui um fator decisivo para o processo de seleção e contratação? Se sim, de que forma?
+                    </strong>
+                </p>
+            </div>
+        </div>
+        <div class="questions__column" style="flex: 1;">
+            <div class="questions__content">
+                <p class="questions__excerpt">
+                    <strong>[Camila Marques]</strong> Considero que sim, claramente e infelizmente. Relativamente aos obstáculos que as mulheres enfrentam, um deles é a descrença na capacidade de trabalho de uma mulher que é mãe. Imaginemos a seguinte situação: uma entidade empregadora tem duas pessoas a candidatarem-se, um homem e uma mulher, ambos com 30 anos e as mesmas habilitações e experiências. Quem é que faz mais sentido contratar tendo em conta...
+                </p>
+                <button class="questions__btn" onclick="openModal('question5Modal')">Ler Mais</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal da Quinta Pergunta -->
+    <div class="modal" id="question5Modal">
+        <div class="modal__content">
+            <span class="modal__close" onclick="closeModal('question5Modal')">&times;</span>
+            <h2>Processo de Seleção</h2>
+            <p>
+                <strong>[Camila Marques]</strong>Considero que sim, claramente e infelizmente. Relativamente aos obstáculos que as mulheres enfrentam, um deles é a descrença na capacidade de trabalho de uma mulher que é mãe. Imaginemos a seguinte situação: uma entidade empregadora tem duas pessoas a candidatarem-se, um homem e uma mulher, ambos com 30 anos e as mesmas habilitações e experiências. Quem é que faz mais sentido contratar tendo em conta a maximização do lucro? Quem é que no futuro vai aceitar fazer horas extras? Na sociedade em que vivemos e com os papéis que são atribuídos a cada pessoa em função do seu género a resposta é só uma. Mesmo que não se materialize, ou seja, que a mulher não queira ou não possa ser mãe, é isso que é esperado dela e é isso que se vai ter em conta na generalidade. Temos também muita crença que as mulheres não nascem para ser líderes, o que pode impedir muitas mulheres de acederem a cargos de liderança. 
+
+            </p>
+        </div>
+    </div>
+    
+      
+</body>
+<script src="modal.js"></script>
+</html>
